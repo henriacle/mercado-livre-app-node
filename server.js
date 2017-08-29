@@ -12,7 +12,7 @@ app.use(function(req, res, next) {
 app.use('/', express.static(__dirname + '/dist/'));
 app.set("views",__dirname+ '/dist/');
 
-app.get('/', function(req, res) {
+app.get('/items', function(req, res) {
     res.sendFile(fullPath.join(__dirname) + '/dist/index.html');
 })
 
